@@ -1,11 +1,15 @@
 {
   "name": "@fengbeans/waffle-tool",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "tool class",
   "main": "cli.js",
   "bin": {
     "waffle-tool": "./cli.js"
   },
+  "files": [
+    "cli.js",
+    "core.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/FengBeans/waffle-tool.git"
