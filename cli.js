@@ -13,8 +13,6 @@ if (!semver.satisfies(process.version, ">= 8.0.0")) {
   );
   process.exit(1);
 }
-const args = yParser(process.argv.slice(2));
-const name = args._[0] || "";
 
 (() => {
   core();

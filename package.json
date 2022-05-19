@@ -1,6 +1,6 @@
 {
-  "name": "waffle-tool",
-  "version": "1.0.0",
+  "name": "@fengbeans/waffle-tool",
+  "version": "1.0.1",
   "description": "tool class",
   "main": "cli.js",
   "bin": {
