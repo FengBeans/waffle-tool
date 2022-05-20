@@ -13,7 +13,7 @@ const core = () => {
   const componentNameArray = [];
   for (let file = 0; file < filesArray.length; file++) {
     componentNameArray.push(titleCase(filesArray[file]));
-    entryFiles += `export { default as ${componentNameArray[file]} } from '@components/${filesArray[file]}/${filesArray[file]}.component';\n`;
+    entryFiles += `export { default as ${componentNameArray[file]} } from './components/${filesArray[file]}/${filesArray[file]}.component';\n`;
   }
 
   fs.writeFileSync(path.resolve(`${url}/src/index.tsx`), entryFiles);
