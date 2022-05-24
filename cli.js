@@ -2,8 +2,7 @@
 
 const program = require("commander");
 const semver = require("semver");
-const yParser = require("yargs-parser");
-const core = require("./core");
+const config = require("./config");
 
 program.version(require("./package.json").version).parse(process.argv);
 
@@ -15,5 +14,5 @@ if (!semver.satisfies(process.version, ">= 8.0.0")) {
 }
 
 (() => {
-  core();
+  config();
 })();

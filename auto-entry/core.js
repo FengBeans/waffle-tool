@@ -6,7 +6,7 @@ const titleCase = (str) => {
   return newStr;
 };
 
-const core = () => {
+const autoEntryCore = () => {
   const url = process.cwd();
   const filesArray = fs.readdirSync(path.resolve(`${url}/src/components`));
   let entryFiles = `//请勿手动更新文件，自动更新\n`;
@@ -19,6 +19,4 @@ const core = () => {
   fs.writeFileSync(path.resolve(`${url}/src/index.tsx`), entryFiles);
 };
 
-core();
-
-module.exports = core;
+module.exports = autoEntryCore;
