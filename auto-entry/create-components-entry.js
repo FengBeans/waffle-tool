@@ -2,6 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const {titleCase} = require("../util");
 
+const tips = "请勿手动更新，自动更新\n;"
 
 const createComponentsEntry = () => {
   const url = process.cwd();

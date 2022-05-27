@@ -1,6 +1,6 @@
 {
   "name": "@fengbeans/waffle-tool",
-  "version": "1.0.5",
+  "version": "1.0.8",
   "description": "tool class",
   "main": "cli.js",
   "bin": {
@@ -9,8 +9,9 @@
   "files": [
     "cli.js",
     "config.js",
-    "auto-entry/*/**",
-    "compile-way/*/**"
+    "auto-entry",
+    "compile-way",
+    "util"
   ],
   "repository": {
     "type": "git",
